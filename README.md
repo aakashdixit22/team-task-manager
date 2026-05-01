@@ -1,3 +1,4 @@
+TaskFlow is a full-stack team task management application that enables users to create projects, assign tasks, and track progress efficiently. It includes secure authentication using JWT and role-based access control for Admins and Members. The application is built using Next.js (App Router) and React for the frontend, with Tailwind CSS for styling. The backend is handled through Next.js API routes, and MongoDB is used for database management.
 <p align="center">
   <img src="https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js" alt="Next.js" />
   <img src="https://img.shields.io/badge/MongoDB-7.0-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
@@ -125,7 +126,7 @@
 │       │              │               │           │
 │       └──────────────┴───────────────┘           │
 │                      │                           │
-│         JWT Verification + RBAC Middleware        │
+│              JWT Verification        │
 └──────────────────────┬──────────────────────────┘
                        │
 ┌──────────────────────┴──────────────────────────┐
@@ -142,8 +143,8 @@
 
 ### Prerequisites
 
-- **Node.js** ≥ 18
-- **MongoDB** ≥ 6.0 (local or [MongoDB Atlas](https://www.mongodb.com/atlas))
+- **Node.js** 
+- **MongoDB**
 - **npm** or **yarn**
 
 ### Installation
@@ -157,14 +158,11 @@ cd task-manager
 npm install
 
 # 3. Create environment file
-cp .env.example .env.local
+cp . .env.local
 
 # 4. Update .env.local with your MongoDB URI and JWT secret
 
-# 5. Start MongoDB (if local)
-mongod --dbpath /data/db
-
-# 6. Run the development server
+# 5. Run the development server
 npm run dev
 ```
 
@@ -177,26 +175,17 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 Create a `.env.local` file in the root directory:
 
 ```env
-MONGODB_URI=mongodb://localhost:27017/task-manager
+MONGODB_URI=your mongouri
 JWT_SECRET=your-super-secret-jwt-key-change-in-production
 ```
 
-| Variable | Description | Required |
-|---|---|---|
-| `MONGODB_URI` | MongoDB connection string | ✅ |
-| `JWT_SECRET` | Secret key for signing JWT tokens | ✅ |
+
 
 ---
 
 ## 📡 API Documentation
 
-### Authentication
 
-| Method | Endpoint | Description | Auth |
-|---|---|---|---|
-| `POST` | `/api/auth/signup` | Register a new user | ❌ |
-| `POST` | `/api/auth/login` | Login & get JWT token | ❌ |
-| `GET` | `/api/auth/me` | Get current user profile | ✅ |
 
 #### Signup Request
 ```json
@@ -372,13 +361,9 @@ The application implements a **two-tier role system** per project:
 - View all project tasks and members
 - Cannot modify task details, delete tasks, or manage members
 
-**Implementation:** Role checks are enforced at the **API level** — every protected endpoint verifies the user's JWT token and checks their role in the project's `members` array before allowing the operation.
 
----
 
-## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
