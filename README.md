@@ -1,5 +1,9 @@
+
+# 🚀 TaskFlow — Team Task Manager
+
 TaskFlow is a full-stack team task management application that enables users to create projects, assign tasks, and track progress efficiently. It includes secure authentication using JWT and role-based access control for Admins and Members. The application is built using Next.js (App Router) and React for the frontend, with Tailwind CSS for styling. The backend is handled through Next.js API routes, and MongoDB is used for database management.
-<p align="center">
+ A full-stack web application for team collaboration — create projects, assign tasks to team members, and track progress with real-time dashboards and role-based access control (Admin/Member).
+ <p align="center">
   <img src="https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js" alt="Next.js" />
   <img src="https://img.shields.io/badge/MongoDB-7.0-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
   <img src="https://img.shields.io/badge/JWT-Auth-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white" alt="JWT" />
@@ -7,20 +11,14 @@ TaskFlow is a full-stack team task management application that enables users to 
   <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
 </p>
 
-# 🚀 TaskFlow — Team Task Manager
 
-> A full-stack web application for team collaboration — create projects, assign tasks to team members, and track progress with real-time dashboards and role-based access control (Admin/Member).
-
-<p align="center">
-  <img src="./screenshots/login.png" alt="TaskFlow Login Page" width="100%" />
-</p>
 
 ---
 
 ## 📋 Table of Contents
 
 - [Features](#-features)
-- [Screenshots](#-screenshots)
+
 - [Tech Stack](#-tech-stack)
 - [Architecture](#-architecture)
 - [Getting Started](#-getting-started)
@@ -76,17 +74,7 @@ TaskFlow is a full-stack team task management application that enables users to 
 
 ---
 
-## 📸 Screenshots
 
-<p align="center">
-  <strong>Dashboard</strong><br/>
-  <img src="./screenshots/dashboard.png" alt="Dashboard" width="100%" />
-</p>
-
-<p align="center">
-  <strong>Projects</strong><br/>
-  <img src="./screenshots/projects.png" alt="Projects" width="100%" />
-</p>
 
 ---
 
@@ -367,6 +355,3 @@ The application implements a **two-tier role system** per project:
 
 ---
 
-<p align="center">
-  Built with ❤️ using Next.js, MongoDB & React
-</p>
