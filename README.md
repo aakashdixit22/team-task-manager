@@ -1,7 +1,7 @@
 
 # 🚀 TaskFlow — Team Task Manager
 
-TaskFlow is a full-stack team task management application that enables users to create projects, assign tasks, and track progress efficiently. It includes secure authentication using JWT and role-based access control for Admins and Members. The application is built using Next.js (App Router) and React for the frontend, with Tailwind CSS for styling. The backend is handled through Next.js API routes, and MongoDB is used for database management.
+TaskFlow is a full-stack team task management application that enables project leaders projects, assign tasks, and track progress efficiently. It includes secure authentication using JWT and role-based access control for Admins and Members. The application is built using Next.js (App Router) and React for the frontend, with Tailwind CSS for styling. The backend is handled through Next.js API routes, and MongoDB is used for database management.
  A full-stack web application for team collaboration — create projects, assign tasks to team members, and track progress with real-time dashboards and role-based access control (Admin/Member).
  <p align="center">
   <img src="https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js" alt="Next.js" />
